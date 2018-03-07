@@ -21,10 +21,16 @@ $acao = $_POST['acao'];
             break;
 
             case 'goto':
+            $produto = [
+                'IMOVEIS' => 'Imóveis',
+                'OI' => 'Oi',
+                'FINANCIAMENTO' => 'Financiamento',
+                'CONSULTORIA' => 'Consultoria de crédito',
+            ];
             $_SESSION['pp_super_credito']['parceiro'] = [
                     'par_var_nome' => 'Nome do parceiro',
                     'par_var_produto' => $_POST['par_var_produto'],
-                    'par_var_produto_formatado' => 'Consultoria de crédito',
+                    'par_var_produto_formatado' =>  $produto[$_POST['par_var_produto']],
                     'par_var_logo' => '_assets/img/logo_parceira.jpg'
             ];
             echo json_encode(["status" => true]);

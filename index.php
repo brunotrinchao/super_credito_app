@@ -47,7 +47,7 @@
     </div>
     <div class="container" id="menu">
         <div class="row">
-            <div class="col"><a href="#" rel="IMOVEL" class="btn btn_imovel btn_produto"><h2>Imóvel</h2></a></div>
+            <div class="col"><a href="#" rel="IMOVEIS" class="btn btn_imovel btn_produto"><h2>Imóvel</h2></a></div>
             <div class="col"><a href="#" rel="OI" class="btn btn_oi btn_produto"><h2>Oi</h2></a></div>
             <div class="col"><a href="#" rel="FINANCIAMENTO" class="btn btn_financiamento btn_produto"><h2>Financiamento</h2></a></div>
             <div class="col"><a href="#" rel="CONSULTORIA" class="btn btn_consultoria btn_produto"><h2>Consultoria de crédito</h2></a></div>
@@ -55,6 +55,7 @@
     </div>
     <form name="goto">
         <input type="hidden" name="acao" value="goto">
+        <input type="hidden" name="par_var_produto">
         <input type="hidden" name="par_var_produto">
     </form>
     <div id="footer">
