@@ -1,0 +1,197 @@
+#banner {
+    width: 100%;
+    min-height: 571px;
+    max-height: 708px;
+    height: ~"calc(100vh - 109px)";
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-transition: all 0.17s linear;
+    -moz-transition: all 0.17s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.17s linear;
+    @media @tablet{
+        min-height: auto;
+        height: auto;
+    }
+    h1.titulo_banner {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        font-weight: 600;
+        font-size: 30px;
+        color: #fff;
+        margin-top: -71px;
+        top: 50%;
+        -webkit-transition: all 0.17s linear;
+        -moz-transition: all 0.17s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.17s linear;
+        @media @tablet{
+            display:none;
+        }
+        i {
+            font-family: 'simple-line-icons';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+    .topo {
+        width: 100%;
+        padding: 17px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media @tablet{
+            flex-direction: column;
+        }
+        .logo {
+            margin: 0;
+            padding: 0;
+            height: 75px;
+        }
+        .box_login {
+            margin: 0;
+            padding: 0;
+            max-width: 440px;
+            @media @tablet{
+                max-width: auto;
+                width: 100%;
+                margin-top: 20px;
+            }
+            form {
+                display: flex;
+                justify-content: space-between;
+                @media @tablet{
+                    flex-direction: column;
+                }
+                .input_group {
+                    width: 185px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    @media @tablet{
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
+                    label {
+                        font-size: 13px;
+                        color: #fff;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                    input {
+                        display: block;
+                        width: ~"calc(100% - 28px)";
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        background-color: rgba(246, 246, 246, .38);
+                        border: solid 1px #969494;
+                        padding: 8px;
+                        outline: none;
+                        font-size: 14px;
+                        color: #333;
+                        font-weight: 300;
+                        margin: 0;
+                        @media @tablet{
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+                    }
+                    button {
+                        background-color: @azul;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #fff;
+                        padding: 10px;
+                        margin-top: 17px;
+                        border: 0;
+                        cursor: pointer;
+                        outline: none;
+                        @media @tablet{
+                            width: 100%;
+                        }
+                        &:hover {
+                            background-color: @azul_hover;
+                        }
+                    }
+                    a {
+                        font-size: 10px;
+                        color: #fff;
+                        font-weight: 400;
+                        text-decoration: underline;
+                        margin: 0;
+                        margin: 0;
+                        text-align: right;
+                        margin-right: 10px;
+                    }
+                    &.input_group_button {
+                        width: auto;
+                        @media @tablet{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .box_usuario {
+                display: none;
+                text-align: right;
+                color: #fff;
+                h3 {
+                    font-weight: 300;
+                    text-align: right;
+                }
+                a {
+                    text-decoration: underline;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#box_logado {
+    #banner {
+        min-height: auto;
+        max-height: auto;
+        height: 350px;
+        @media @tablet{
+            height: auto;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @media @tablet{
+               display:none !important;
+            }
+            i {
+                &:before {
+                    content: "\e604";
+                }
+            }
+        }
+    }
+    .box_login {
+        form {
+            display: none !important;
+        }
+        .box_usuario {
+            display: block !important;
+        }
+    }
+}
