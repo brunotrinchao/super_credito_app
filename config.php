@@ -21,3 +21,5 @@ require '_class/header.class.php';
 require '_class/footer.class.php'; 
 require '_class/sidebar.class.php'; 
 require '_class/indicadores.class.php'; 
+require '_class/gformparent.class.php';
+require 'helper/form.class.php'; 

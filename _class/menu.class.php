@@ -41,7 +41,7 @@ class Menu{
         $html .= '<li>';
         $html .= '<a href="#"><i class="fa fa-home"></i>Indicação<i class="fa fa-angle-down"></i></a>';
         $html .= '<ul>';
-        $html .= '<li><a href="#">Comprar</a></li>';
+        $html .= '<li><a href="#" data-toggle="modal" data-target="#add_imoveis_compra">Comprar</a></li>';
         $html .= '<li><a href="#">Alugar (proprietário)</a></li>';
         $html .= '<li><a href="#">Vender</a></li>';
         $html .= '<li><a href="#">Alugar (interessado)</a></li>';
